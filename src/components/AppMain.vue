@@ -23,14 +23,14 @@ export default {
                     </p>
                     <button class="btn-black mt-4">READ MORE</button>
                     <div class="mt-5 center">
-                        <div>
+                        <div class="social">
                             <a href="https://www.facebook.com/">Facebook</a>
                             <a href="https://www.instagram.com/">Instagram</a>
                             <a href="https://twitter.com">Twitter</a>
                             <a href="https://www.youtube.com/">YouTube</a>
                         </div>
-                        <div class="bg-black">
-                            <a href="" class="text-white bg-success">1</a>
+                        <div class="counter-pages">
+                            <a href="" class="text-white">1</a>
                             <a href="" class="text-white">2</a>
                             <a href="" class="text-white">3</a>
                         </div>
@@ -83,5 +83,24 @@ a {
 
 .w-50 {
     width: 52%;
+}
+
+.social a:hover {
+    color: $green;
+}
+
+.counter-pages {
+    background-image: linear-gradient(to right, $color-gradient-black);
+    border-radius: 15px;
+    padding: 3px 6px;
+
+    a {
+        border-radius: 15px;
+
+
+        &:hover {
+            background-image: linear-gradient(to top left, $color-gradient-green);
+        }
+    }
 }
 </style>
