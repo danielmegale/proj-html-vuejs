@@ -69,16 +69,4 @@ section {
 .center {
     @include center-flex;
 }
-
-.my-btn {
-    background-image: linear-gradient(to right, $color-gradient-green);
-    padding: 10px 15px;
-    border-radius: 30px;
-    color: #ffffff;
-    border: 0;
-
-    &:hover {
-        background-image: linear-gradient(to right, $color-gradient-black);
-    }
-}
 </style>
