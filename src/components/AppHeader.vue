@@ -1,5 +1,7 @@
 <script>
+
 export default {
+
 }
 </script>
 
@@ -49,6 +51,10 @@ export default {
     height: 100%;
 }
 
+.box-shadow {
+    box-shadow: 0px 10px 20px #BBB;
+}
+
 section {
     i {
         padding: 10px;
@@ -59,6 +65,7 @@ section {
     }
 }
 
+// NavBar
 .center {
     @include center-flex;
 }
@@ -73,9 +80,5 @@ section {
     &:hover {
         background-image: linear-gradient(to right, $color-gradient-black);
     }
-}
-
-.box-shadow {
-    box-shadow: 0px 10px 20px #BBB;
 }
 </style>
