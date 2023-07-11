@@ -23,7 +23,10 @@ export default {
         <!-- NavBar -->
         <section class="bg-white my-h-100 box-shadow">
             <div class="container center">
-                <img src="../assets/images/cropped-Group-39-2x.png" alt="">
+                <a href="">
+
+                    <img src="../assets/images/cropped-Group-39-2x.png" alt="">
+                </a>
                 <div class="center my-w-40">
                     <a href=""><span>HOME</span></a>
                     <a href=""><span>ABOUT</span></a>
@@ -49,10 +52,6 @@ export default {
     justify-content: space-between;
     align-items: center;
     height: 100%;
-}
-
-.box-shadow {
-    box-shadow: 0px 10px 20px #BBB;
 }
 
 section {

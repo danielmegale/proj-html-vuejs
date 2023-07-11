@@ -1,8 +1,10 @@
 <script>
 import MainJumbotron from './MainJumbotron.vue';
-import ChooseusCrard from './ChooseusCrard.vue'
+import ChooseusCrard from './ChooseusCrard.vue';
+import MainMission from './MainMission.vue';
+import MainGallery from './MainGallery.vue';
 export default {
-    components: { MainJumbotron, ChooseusCrard }
+    components: { MainJumbotron, ChooseusCrard, MainMission, MainGallery }
 }
 </script>
 
@@ -10,6 +12,8 @@ export default {
 <template>
     <MainJumbotron />
     <ChooseusCrard />
+    <MainMission />
+    <MainGallery />
 </template>
 
 <style lang="scss">
