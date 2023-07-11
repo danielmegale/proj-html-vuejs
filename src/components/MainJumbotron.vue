@@ -44,34 +44,11 @@ export default {
 <style lang="scss" scoped>
 @import '../assets/sass/custom';
 
-@mixin center-flex {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 100%;
-}
-
-.center {
-    @include center-flex;
-}
-
 .bg-img {
     background-image: url(../assets/images/Group-36-2x.png);
     background-size: 56%;
     background-repeat: no-repeat;
     background-position: right;
-}
-
-.btn-black {
-    background-image: linear-gradient(to right, $color-gradient-black);
-    padding: 10px 15px;
-    border-radius: 30px;
-    color: #ffffff;
-    border: 0;
-
-    &:hover {
-        background-image: linear-gradient(to right, $color-gradient-green);
-    }
 }
 
 a {

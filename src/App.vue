@@ -9,7 +9,7 @@ export default {
 
 
 <template>
-  <div class="bg-black fixed">
+  <div class="bg-black sticky">
     <AppHeader />
   </div>
   <AppMain />
@@ -17,10 +17,36 @@ export default {
 </template>
 
 <style lang="scss">
-.fixed {
+@import './assets/sass/custom';
+
+.sticky {
   position: sticky;
   top: 0;
   left: 0;
   right: 0;
+}
+
+.my-btn {
+  background-image: linear-gradient(to right, $color-gradient-green);
+  padding: 10px 15px;
+  border-radius: 30px;
+  color: #ffffff;
+  border: 0;
+
+  &:hover {
+    background-image: linear-gradient(to right, $color-gradient-black);
+  }
+}
+
+.btn-black {
+  background-image: linear-gradient(to right, $color-gradient-black);
+  padding: 10px 15px;
+  border-radius: 30px;
+  color: #ffffff;
+  border: 0;
+
+  &:hover {
+    background-image: linear-gradient(to right, $color-gradient-green);
+  }
 }
 </style>
