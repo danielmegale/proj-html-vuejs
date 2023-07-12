@@ -21,7 +21,7 @@ export default {
                 <div class="card-body">
                     <h2 class="card-title"><i class="fa-solid fa-gauge-high"></i></h2>
                     <h6 class="card-subtitle mb-2 ">Speed Optimization</h6>
-                    <p class="text-black">Far far away,behind the word mountains,far from the countries Vokalia
+                    <p>Far far away,behind the word mountains,far from the countries Vokalia
                         Separated
                         ...</p>
                 </div>
@@ -30,7 +30,7 @@ export default {
                 <div class="card-body">
                     <h2 class="card-title"><i class="fa-solid fa-cloud"></i></h2>
                     <h6 class="card-subtitle mb-2 ">Speed Optimization</h6>
-                    <p class="text-black">Far far away,behind the word mountains,far from the countries Vokalia
+                    <p>Far far away,behind the word mountains,far from the countries Vokalia
                         Separated
                         ...</p>
                 </div>
@@ -39,7 +39,7 @@ export default {
                 <div class="card-body">
                     <h2 class="card-title"><i class="fa-solid fa-mobile-screen-button"></i></h2>
                     <h6 class="card-subtitle mb-2 ">Speed Optimization</h6>
-                    <p class="text-black">Far far away,behind the word mountains,far from the countries Vokalia
+                    <p>Far far away,behind the word mountains,far from the countries Vokalia
                         Separated
                         ...</p>
                 </div>
@@ -48,7 +48,7 @@ export default {
                 <div class="card-body">
                     <h2 class="card-title"><i class="fa-regular fa-clock"></i></h2>
                     <h6 class="card-subtitle mb-2 ">Speed Optimization</h6>
-                    <p class="text-black">Far far away,behind the word mountains,far from the countries Vokalia
+                    <p>Far far away,behind the word mountains,far from the countries Vokalia
                         Separated
                         ...</p>
                 </div>
@@ -68,8 +68,16 @@ export default {
     &:hover {
         background-image: linear-gradient(to bottom left, $color-gradient-green);
         border: 0;
+        color: #ffffff;
+    }
+
+    &:hover h2 i {
+        color: #ffffff;
     }
 }
+
+
+
 
 h2 i {
     color: $green;
