@@ -2,8 +2,9 @@
 import AppHeader from './components/AppHeader.vue';
 import AppMain from './components/AppMain.vue';
 import AppFooter from './components/AppFooter.vue';
+import StickyMessage from './components/StickyMessage.vue';
 export default {
-  components: { AppHeader, AppMain, AppFooter }
+  components: { AppHeader, AppMain, AppFooter, StickyMessage }
 }
 </script>
 
@@ -14,6 +15,7 @@ export default {
   </div>
   <AppMain />
   <AppFooter />
+  <StickyMessage />
 </template>
 
 <style lang="scss">

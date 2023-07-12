@@ -6,6 +6,7 @@ import MainGallery from './MainGallery.vue';
 import ClientJumbotron from './ClientJumbotron.vue';
 import MainOurBlog from './MainOurBlog.vue';
 import MainCards from './MainCards.vue';
+
 export default {
     components: { MainJumbotron, ChooseusCrard, MainMission, MainGallery, ClientJumbotron, MainOurBlog, MainCards }
 }

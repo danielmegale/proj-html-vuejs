@@ -6,7 +6,6 @@ export default {
 
 <template>
     <div class="bg-img-black mt-5 mb-5 ">
-        <img src="../assets/images/four-businesspeople-in-a-boardroom-with-paperwork-PC4V8H4.jpg" alt="">
         <div class="paragraph">
             <i class="fa-solid fa-quote-left fa-2xl mt-5 pt-5"></i>
             <h3>When it comes to barbequing, there are two main schools of thought for the techniques that you can use.
@@ -24,6 +23,9 @@ export default {
 .bg-img-black {
     position: relative;
     height: 550px;
+    background-image: url(../assets/images/four-businesspeople-in-a-boardroom-with-paperwork-PC4V8H4.jpg);
+    background-size: cover;
+    background-position: 10px;
 
     img {
         height: 100%;

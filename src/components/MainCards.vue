@@ -90,7 +90,6 @@ export default {
     button {
         border: 0;
         background-color: #00000073;
-        margin-left: 0;
     }
 }
 
