@@ -1,13 +1,43 @@
 <script>
 export default {
+    data() {
+        return {
+            clients: [
+                {
+                    icon: 'client-1-2x.png'
+                },
+                {
+                    icon: 'client-3-2x.png'
+                },
+                {
+                    icon: 'client-4-2x.png'
+                },
+                {
+                    icon: 'client-5-2x.png'
+                },
+                {
+                    icon: 'client-7-2x.png'
+                },
+                {
+                    icon: 'client-9-2x.png'
+                }
+            ]
 
+        }
+    },
+    methods: {
+        getImg(target) {
+            const url = new URL(`../assets/images/${target}`, import.meta.url)
+            return url.href
+        }
+    }
 }
 </script>
 
 <template>
     <main class="bg-secondary pt-5">
         <section class="container">
-            <div class="center">
+            <div class="center mb-5">
                 <div class="big-card black-card m-3 p-5">
                     <div class="d-flex flex-column align-items-center justify-content-center h-100 ">
                         <p>Are You Ready?</p>
@@ -25,6 +55,11 @@ export default {
                         <h2>Let's Talk About Work</h2>
                         <button class="btn-black mt-5">START NOW</button>
                     </div>
+                </div>
+            </div>
+            <div class="center pt-5 pb-5 mb-5">
+                <div v-for="client in clients">
+                    <img :src="getImg(client.icon)" alt="">
                 </div>
             </div>
         </section>
