@@ -46,7 +46,7 @@ export default {
     <section class="container mt-5 pt-5">
         <div class="d-flex align-items-end mb-5">
             <div class="w-50">
-                <div class="my-w-80 center">
+                <div class="my-w-80 center mb-5">
                     <div class="small-separator"></div>
                     <div class="separator"></div>
                 </div>
@@ -55,7 +55,7 @@ export default {
                         <span class="text-success">projects</span>
                     </h2>
                 </div>
-                <div class="my-w-80 center">
+                <div class="my-w-80 center mt-5">
                     <div class="small-separator"></div>
                     <div class="separator"></div>
                 </div>

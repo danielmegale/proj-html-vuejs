@@ -35,27 +35,6 @@ export default {
 <style lang="scss">
 @import '../assets/sass/custom';
 
-.bg-img-green {
-    position: relative;
-
-    img {
-        border-radius: 35px;
-    }
-}
-
-.bg-img-green::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: linear-gradient(to top right, $color-gradient-green);
-    opacity: 0.8;
-    border-radius: 35px;
-}
-
 .my-w-800 {
     position: relative;
 }
