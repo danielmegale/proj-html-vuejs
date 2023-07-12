@@ -4,8 +4,9 @@ import ChooseusCrard from './ChooseusCrard.vue';
 import MainMission from './MainMission.vue';
 import MainGallery from './MainGallery.vue';
 import ClientJumbotron from './ClientJumbotron.vue';
+import MainOurBlog from './MainOurBlog.vue';
 export default {
-    components: { MainJumbotron, ChooseusCrard, MainMission, MainGallery, ClientJumbotron }
+    components: { MainJumbotron, ChooseusCrard, MainMission, MainGallery, ClientJumbotron, MainOurBlog }
 }
 </script>
 
@@ -16,6 +17,7 @@ export default {
     <MainMission />
     <MainGallery />
     <ClientJumbotron />
+    <MainOurBlog />
 </template>
 
 <style lang="scss">

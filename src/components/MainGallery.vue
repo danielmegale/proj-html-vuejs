@@ -4,28 +4,44 @@ export default {
         return {
             images: [
                 {
-                    img: 'ina-soulis-227104-unsplash-1024x1024.jpg'
+                    img: 'ina-soulis-227104-unsplash-1024x1024.jpg',
+                    title: 'The Basket of Flowers ',
+                    work: 'BRANDING - MARKETING'
                 },
                 {
-                    img: 'sunisa-misa-531163-unsplash-1024x1024.jpg'
+                    img: 'sunisa-misa-531163-unsplash-1024x1024.jpg',
+                    title: 'A Famous Ferris Wheel',
+                    work: 'MARKETING'
                 },
                 {
-                    img: '355H-1024x1024.jpg'
+                    img: '355H-1024x1024.jpg',
+                    title: 'Complementary Colors',
+                    work: 'BRANDING - MARKETING'
                 },
                 {
-                    img: 'photo-1448932252197-d19750584e56-1024x1024.jpg'
+                    img: 'photo-1448932252197-d19750584e56-1024x1024.jpg',
+                    title: 'Business Prestige',
+                    work: 'BRANDING'
                 },
                 {
-                    img: 'business-competition-PB366D8-1024x1024.jpg'
+                    img: 'business-competition-PB366D8-1024x1024.jpg',
+                    title: 'Colorful Origami Boats',
+                    work: 'BRANDING - MARKETING'
                 },
                 {
-                    img: 'cozy-sofa-in-living-room-PQR5AB9-1024x1024.jpg'
+                    img: 'cozy-sofa-in-living-room-PQR5AB9-1024x1024.jpg',
+                    title: 'Modern Couch',
+                    work: 'MARKETING'
                 },
                 {
-                    img: 'aa9a4539-PQGJ7HU-1024x1024.jpg'
+                    img: 'aa9a4539-PQGJ7HU-1024x1024.jpg',
+                    title: 'Hot Air Balloons',
+                    work: 'BRANDING - MARKETING'
                 },
                 {
-                    img: 'cody-davis-253928-unsplash-1024x1024.jpg'
+                    img: 'cody-davis-253928-unsplash-1024x1024.jpg',
+                    title: 'Make Difference',
+                    work: 'BRANDING'
                 },
             ],
 
@@ -70,6 +86,10 @@ export default {
         <div class="d-flex flex-wrap justify-content-between mt-5">
             <div class="my-w-25 gallery-hover" v-for="image in images">
                 <img :src="getImg(image.img)" alt="">
+                <div class="title-card">
+                    <h5>{{ image.title }}</h5>
+                    <p>{{ image.work }}</p>
+                </div>
             </div>
         </div>
         <div class="d-flex justify-content-center mt-5 pt-5 mb-5">
@@ -113,5 +133,18 @@ export default {
     display: block;
     transform: scale(1.1);
     z-index: 1;
+}
+
+.gallery-hover:hover .title-card {
+    display: block;
+}
+
+.title-card {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    display: none;
+    color: #ffffff;
 }
 </style>
